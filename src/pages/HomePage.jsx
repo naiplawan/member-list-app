@@ -49,7 +49,7 @@ function HomePage() {
                 <TableCell sx={{ fontSize: '16px' }}>{row.lastname}</TableCell>
                 <TableCell sx={{ fontSize: '16px' }}>{row.gender}</TableCell>
                 <TableCell sx={{ fontSize: '16px' }}>{row.birthdate}</TableCell>
-                <TableCell sx={{ fontSize: '16px' }}>{row.aboutme}</TableCell>
+                <TableCell sx={{ fontSize: '16px' }}>{row.aboutme.splice(0, 20)}</TableCell>
               </TableRow>
             ))}
           </TableBody>
